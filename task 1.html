@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #5c6474, #cfdef3);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(194, 117, 117, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background: rgba(13, 13, 13, 0.8);
+    color: rgb(237, 127, 127);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background: #0a0a0a;
+    border-radius: 5px;
+}
+
+.content {
+    padding-top: 80px; 
+    text-align: center;
+    color: #333;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <u><h1>Welcome to Our Wellness jouney</h1></u>
+        <div class="content">
+            <section id="home">
+                <h1>YOGA STUDIO</h1>
+                <p>At our yoga studio, we believe in the transformative power of yoga to promote physical health, mental clarity, and emotional balance.<br>
+                 Our space is designed to provide a serene environment where individuals of all levels can come together to practice and explore their<br>
+                  personal journey toward wellness.</p>
+                <img src="https://i.etsystatic.com/25692018/c/793/630/291/47/il/aee07e/2834295903/il_340x270.2834295903_afyw.jpg" alt="Yoga Practice" class="responsive-img" width="600" height="300">
+            </section>
+            <section id="about">
+                <h2><u>About Us</u></h2>
+                <p>At our yoga studio, we are dedicated to fostering a welcoming environment for all. Our experienced instructors offer a variety of<br>
+                classes, from gentle Hatha to dynamic Vinyasa, ensuring that everyone can find their practice. We believe in the power of community<br>
+                and connection, hosting workshops and events to support personal growth and well-being. Join us to explore your journey toward<br>
+                physical and mental balance in a serene and nurturing space.</p>
+            </section>
+
+
+            <section id="services">
+                <h2><u>Our Services</u></h2>
+                <p>We offer a variety of yoga classes, meditation sessions, and wellness workshops.</p>
+                <div class="services-container">
+                    <div class="service">
+                        <h3>Yoga Classes</h3>
+                        <p>Join us for diverse classes tailored to all levels.</p>
+                        <img src="https://wp.missmalini.com/wp-content/uploads/2018/12/shutterstock_713186671-1.jpg" alt="Yoga Classes" class="responsive-img" width="200" height="150">
+                        
+                        
+                    </div>
+                    <div class="service">
+                        <h3>Meditation Sessions</h3>
+                        <p>Find your inner peace with guided meditation.</p>
+                        <img src="https://img.freepik.com/premium-photo/mediation-peace-yoga-class-with-people-park-relax-mindfulness-spirituality-zen-fitness-wellness-with-black-man-woman-training-nature-health-healing-gratitude_590464-158733.jpg" alt="Meditation Sessions" class="responsive-img" width="200" height="150">
+                        
+                        
+                    </div>
+                    <div class="service">
+                        <h3>Wellness Workshops</h3>
+                        <p>Participate in workshops that enhance your well-being.</p>
+                        <img src="https://themowbray.co.uk/images/blog/sheffield-corporate-wellness-workshops-at-the-mowbray-160119112024.jpg" alt="Wellness Workshops" class="responsive-img" width="200" height="150">
+                        
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contact">
+                <h2><u>Contact Us</u></h2>
+                <p>Join us in our journey towards wellness and tranquility.<br>
+                    ph-no:7777777777<br>
+                </p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4NMz1A1Kxgun7BVKcWFIUZdXJjgtW7VZYdw&s" alt="Contact Us" class="responsive-img" width="500" height="400">
+            </section>
+            <h4><b>Thank you for visting....</b></h4>
+        <div style="height: 1500px;"></div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
